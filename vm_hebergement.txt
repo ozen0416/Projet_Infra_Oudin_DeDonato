@@ -1,0 +1,36 @@
+Voici les étapes à suivre pour créer une machine virtuelle (VM) sous VMware pour héberger un serveur Apache :
+
+Ouvrez VMware Workstation et cliquez sur "Nouvelle machine virtuelle" dans le menu Fichier.
+
+Dans l'assistant de création de nouvelle machine virtuelle, sélectionnez "Personnalisé" et cliquez sur "Suivant".
+
+Choisissez le type de système d'exploitation que vous souhaitez installer sur la machine virtuelle. Dans ce cas, sélectionnez "Linux" et la distribution que vous souhaitez utiliser (par exemple, "Ubuntu 20.04").
+
+Nommez la machine virtuelle et choisissez l'emplacement où vous souhaitez stocker les fichiers de la machine virtuelle.
+
+Définissez la quantité de mémoire RAM que vous souhaitez allouer à la machine virtuelle. Pour un serveur web, une quantité de RAM de 2 à 4 Go est généralement suffisante.
+
+Créez un disque dur virtuel pour la machine virtuelle en spécifiant la taille du disque dur et son emplacement sur le disque dur physique de votre ordinateur.
+
+Configurez les paramètres réseau de la machine virtuelle. Si vous utilisez une configuration réseau en mode bridge, la machine virtuelle aura sa propre adresse IP sur le réseau local.
+
+Configurez les paramètres du processeur en fonction des besoins de votre application. Pour un serveur web, un seul processeur est généralement suffisant.
+
+Terminez l'assistant de création de la machine virtuelle en cliquant sur "Terminer".
+
+Maintenant que vous avez créé la machine virtuelle, vous pouvez installer le système d'exploitation Linux de votre choix et Apache pour héberger votre site web. Voici les étapes générales pour installer Apache sur Ubuntu :
+
+Ouvrez un terminal sur la machine virtuelle et exécutez la commande suivante pour mettre à jour les paquets :
+sudo apt-get update
+
+Installez Apache en exécutant la commande suivante :
+sudo apt-get install apache2
+
+Une fois l'installation terminée, démarrez le service Apache en exécutant la commande suivante :
+sudo systemctl start apache2
+
+Vérifiez que le service Apache est en cours d'exécution en exécutant la commande suivante :
+sudo systemctl status apache2
+
+Si Apache est en cours d'exécution, vous pouvez accéder à la page d'accueil d'Apache en ouvrant un navigateur web et en accédant à l'adresse IP de la machine virtuelle.
+Vous pouvez maintenant configurer Apache pour héberger votre site web. Consultez la documentation officielle d'Apache pour plus d'informations sur la configuration d'un serveur web Apache.
