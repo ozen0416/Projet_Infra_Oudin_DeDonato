@@ -1,0 +1,13 @@
+Pour mettre en place ce SI, vous pouvez utiliser des machines virtuelles (VM). Voici une suggestion d'architecture :
+
+• VM1 : Pare-feu (avec DHCP, DNS, filtrage réseau, routage…) - Vous pouvez utiliser des logiciels open source tels que pfSense, OPNsense ou VyOS pour cela.
+• VM2 : Client Windows - Vous pouvez installer Windows 10 ou Windows Server 2019 en fonction de vos besoins.
+• VM3 : Client Linux - Vous pouvez installer Ubuntu, CentOS, Debian ou tout autre système d'exploitation Linux de votre choix.
+• VM4 : Serveur Linux pour sauvegarde du site web - Vous pouvez utiliser des logiciels open source tels que Bacula, Amanda, ou Duplicati pour sauvegarder le site web.
+• VM5 : Serveur Linux pour hébergement du site web - Vous pouvez utiliser des logiciels open source tels que Apache, Nginx ou Lighttpd pour héberger le site web.
+
+Pour restreindre l'accès au serveur de sauvegarde, vous pouvez configurer un réseau privé virtuel (VPN) pour permettre uniquement l'accès interne. Vous pouvez utiliser des solutions open source telles que OpenVPN ou SoftEther pour cela.
+
+Pour permettre l'accès au site web à partir d'internet, vous devez configurer le pare-feu pour permettre le trafic HTTP/HTTPS entrant sur le serveur web. Vous pouvez également utiliser des certificats SSL pour sécuriser les communications HTTPS entre le serveur web et les clients externes.
+
+N'oubliez pas de configurer des règles de pare-feu appropriées pour garantir la sécurité de votre infrastructure et de mettre en place des politiques de sauvegarde régulières pour protéger vos données en cas de sinistre.
