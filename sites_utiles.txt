@@ -1,1 +1,4 @@
 https://www.patricelaurent.net/creer-un-serveur-de-sauvegarde/
+https://www.linuxtricks.fr/wiki/debian-installer-un-serveur-lamp-apache-mariadb-php
+https://www.linuxtricks.fr/wiki/let-s-encrypt-mise-en-place
+https://pixelabs.fr/installation-configuration-pfsense-workstation/
