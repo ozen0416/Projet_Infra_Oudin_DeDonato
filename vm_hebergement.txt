@@ -33,4 +33,4 @@ Vérifiez que le service Apache est en cours d'exécution en exécutant la comma
 sudo systemctl status apache2
 
 Si Apache est en cours d'exécution, vous pouvez accéder à la page d'accueil d'Apache en ouvrant un navigateur web et en accédant à l'adresse IP de la machine virtuelle.
-Vous pouvez maintenant configurer Apache pour héberger votre site web. Consultez la documentation officielle d'Apache pour plus d'informations sur la configuration d'un serveur web Apache.
+Vous pouvez maintenant configurer Apache pour héberger votre site web.
